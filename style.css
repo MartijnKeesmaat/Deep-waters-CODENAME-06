@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  letter-spacing: 31px;
+  font-size: 59px;
+  top: 180px;
+  text-shadow: 0px 2px 33px rgba(255, 255, 255, 0.9);
+}
+#dribbble {
+  width: 1200px;
+  height: 900px;
+  background: #ced3d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#frame {
+  background: #0a081a;
+  height: 610px;
+  width: 1086px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-stars {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+header {
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header nav {
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+}
+header nav a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin-right: 50px;
+  font-weight: 300;
+}
+header nav .active {
+  color: #619AA4;
+}
+header nav .active:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #619AA4;
+  width: 25px;
+  margin-top: 7px;
+}
+header .follow {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+header .follow h3 {
+  color: #fff;
+  margin: 0;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  font-size: 12px;
+  margin-right: 10px;
+}
+header .follow__dash {
+  background: #fff;
+  width: 30px;
+  height: 1px;
+  opacity: 0.6;
+  margin-right: 20px;
+}
+header .follow__link {
+  color: #fff;
+  margin: 0;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-right: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+main {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+main p.main-text {
+  max-width: 160px;
+  opacity: 0.6;
+  line-height: 2.4;
+  font-size: 11px;
+  flex: 1;
+  position: relative;
+  right: -70px;
+  top: 50px;
+}
+main p.main-text:after {
+  content: "";
+  background: #006D78;
+  width: 25px;
+  height: 2px;
+  display: block;
+  margin-top: 10px;
+}
+main .slide {
+  color: #fff;
+  flex: 4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .slide h1 {
+  position: absolute;
+  margin: 0;
+}
+main .slide img {
+  width: 300px;
+}
+main .slide .slides {
+  margin-top: 20px;
+}
+main .slide .slides a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  margin-right: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+main .video {
+  flex: 1;
+}
+main .video img {
+  width: 200px;
+}
+
+footer .uppie {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  opacity: 0.8;
+}
+footer .uppie img {
+  width: 180px;
+}
+
+.credits {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.credits img {
+  width: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
