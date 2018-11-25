@@ -60,6 +60,7 @@ header
     color: #fff
     display: flex
     align-items: flex-start
+    margin-left: 147px
 
     a
       font-size: 12px
@@ -120,7 +121,7 @@ main
   justify-content: space-between
 
   p.main-text
-    max-width: 160px
+    max-width: 240px
     opacity: 0.6
     line-height: 2.4
     font-size: 11px
@@ -137,7 +138,7 @@ main
       display: block
       margin-top: 10px
   
-  .slide
+  .slide 
     color: #fff
     flex: 4
     position: relative
@@ -149,12 +150,16 @@ main
     h1
       position: absolute
       margin: 0
+      letter-spacing: 27px
+      font-size: 53px
 
     img
-      width: 300px
+      width: 280px
 
     .slides
-      margin-top: 20px
+      margin-top: 35px
+      display: flex
+      align-items: flex-start
 
       a
         text-decoration: none
@@ -166,13 +171,28 @@ main
         opacity: .7
         letter-spacing: 1px
 
-        
+      a.active
+        opacity: 1
+
+        &:after
+          display: block
+          content: ''
+          width: 14px
+          height: 1px
+          background: #fff
+          margin-top: 10px
 
   .video
     flex: 1
+    position: relative
+    right: 60px
+    display: flex
+    align-items: center
     
     img
-      width: 200px
+      width: 170px
+      position: relative
+      top: -20px
 
 footer
   .uppie
@@ -187,9 +207,43 @@ footer
 
 .credits
   position: absolute
-  right: 0
-  bottom: 0
+  right: -62px
+  bottom: -105px
+  width: 219px
+  height: 219px
+  border: 2px solid rgba(#66B1E3, .3)
+  border-radius: 50%
+  color: #fff
 
+  .credit
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    left: -47px
+    bottom: -51px
+    transform: scale(0.9)
+
+    img
+      width: 40px
+      height: 40px 
+      margin-right: 15px
+      box-shadow: 1px 1px 100px rgba(255, 255, 255, 1)
+      border-radius: 50%
+
+    h4
+      text-transform: uppercase
+      font-size: 9px
+      letter-spacing: 2px
+      margin: 0
+      min-width: 107px
+
+    p
+      opacity: 0.5
+      font-size: 10px
+      margin-top: 5px
+      margin-bottom: 0
+ 
   img
     width: 40px
 
