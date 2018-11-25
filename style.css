@@ -50,7 +50,7 @@ h1 {
 
 header {
   color: #fff;
-  padding: 20px 40px;
+  padding: 30px 40px 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +60,7 @@ header nav {
   color: #fff;
   display: flex;
   align-items: flex-start;
-  margin-left: 147px;
+  margin-left: 165px;
 }
 header nav a {
   font-size: 12px;
@@ -68,6 +68,7 @@ header nav a {
   text-decoration: none;
   margin-right: 50px;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 header nav .active {
   color: #619AA4;
@@ -75,9 +76,9 @@ header nav .active {
 header nav .active:after {
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   background: #619AA4;
-  width: 25px;
+  width: 21px;
   margin-top: 7px;
 }
 header .follow {
@@ -123,7 +124,7 @@ main {
 }
 main p.main-text {
   max-width: 240px;
-  opacity: 0.6;
+  opacity: 0.7;
   line-height: 2.4;
   font-size: 11px;
   flex: 1;
@@ -133,7 +134,7 @@ main p.main-text {
 }
 main p.main-text:after {
   content: "";
-  background: #006D78;
+  background: #33b8c5;
   width: 25px;
   height: 2px;
   display: block;
@@ -169,7 +170,7 @@ main .slide .slides a {
   font-weight: 200;
   margin-right: 20px;
   font-size: 14px;
-  opacity: 0.7;
+  opacity: 0.4;
   letter-spacing: 1px;
 }
 main .slide .slides a.active {
@@ -200,7 +201,7 @@ footer .uppie {
   position: absolute;
   left: 0;
   bottom: -20px;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 footer .uppie img {
   width: 180px;
@@ -233,9 +234,8 @@ footer .uppie img {
   border-radius: 50%;
 }
 .credits .credit h4 {
-  text-transform: uppercase;
-  font-size: 9px;
-  letter-spacing: 2px;
+  font-size: 11px;
+  letter-spacing: 1.2px;
   margin: 0;
   min-width: 107px;
 }
