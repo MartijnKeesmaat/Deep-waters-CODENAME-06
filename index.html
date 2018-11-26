@@ -35,6 +35,7 @@
             <div class="slide-wrapper">
               <div class="slide-item">
                 <img src="img/swim.jpg" class="slide-item__image" />
+                <div class="spotlight"></div>
               </div>
             </div>
 
@@ -50,18 +51,29 @@
         <footer>
           <div class="uppie"><img src="img/up-down.jpg" alt="" /></div>
           <div class="credits">
-            <div class="credit">
-              <img src="img/user.png" alt="" />
-              <div class="name">
-                <h4>Almos Bechtold</h4>
-                <p>Follow his story</p>
+            <div class="credit-pos">
+            <a href="" class="ctn-atractive">
+              <div class="contact-area">
+                  <div class="credit text-hover">
+                    <img src="img/user.png" alt="" />
+                    <div class="name">
+                      <h4>Almos Bechtold</h4>
+                      <p>Follow his story</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </footer>
+
+        <div id="magic-cursor"><div id="ball"></div></div>
+
         <script src="js/pixi.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
         <script src="js/TweenMax.min.js"></script>
         <script src="js/displacement.js"></script>
+        <script src="js/magnetic.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script>
           imagesLoaded(document.body, () =>

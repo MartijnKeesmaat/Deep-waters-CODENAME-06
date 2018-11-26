@@ -23,6 +23,8 @@ h1 {
   font-size: 59px;
   top: 180px;
   text-shadow: 0px 2px 33px rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  animation: blur-text-enter 1.6s ease 2.7s forwards;
 }
 #dribbble {
   width: 1200px;
@@ -55,6 +57,8 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  opacity: 0;
+  animation: show 3s ease 2.7s forwards;
 }
 header nav {
   color: #fff;
@@ -131,6 +135,8 @@ main p.main-text {
   position: relative;
   right: -100px;
   top: 50px;
+  opacity: 0;
+  animation: blur-enter 1s ease 1.4s forwards;
 }
 main p.main-text:after {
   content: "";
@@ -148,6 +154,24 @@ main .slide {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: blur-enter 1s ease 1.8s forwards;
+}
+main .slide .spotlight {
+  box-shadow: 0 2px 64px rgba(52, 81, 96, 0.6);
+  width: 340px;
+  height: 320px;
+  margin: 0 auto;
+  left: 0;
+  margin-top: 40px;
+  right: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background: rgba(52, 81, 96, 0.6);
+  position: absolute;
+  filter: blur(40px);
+  opacity: 0;
+  animation: show 3s ease 2.7s forwards;
 }
 main .slide h1 {
   position: absolute;
@@ -194,6 +218,8 @@ main .video {
   right: 60px;
   display: flex;
   align-items: center;
+  opacity: 0;
+  animation: blur-enter 1s ease 2.1s forwards;
 }
 main .video img {
   width: 170px;
@@ -206,9 +232,11 @@ footer .uppie {
   position: absolute;
   left: 0;
   bottom: -20px;
-  opacity: 0.7;
+  opacity: 0;
+  animation: blur-enter 1s ease 1s forwards;
 }
 footer .uppie img {
+  opacity: 0.7;
   width: 180px;
 }
 
@@ -221,15 +249,23 @@ footer .uppie img {
   border: 2px solid rgba(102, 177, 227, 0.3);
   border-radius: 50%;
   color: #fff;
+  opacity: 0;
+  animation: show 3s ease 2.7s forwards;
 }
 .credits .credit {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  left: -47px;
-  bottom: -51px;
   transform: scale(0.9);
+}
+.credits .credit-pos {
+  position: relative;
+  top: 56px;
+  left: -30px;
+}
+.credits .credit a {
+  color: #fff;
 }
 .credits .credit img {
   width: 40px;
@@ -243,15 +279,92 @@ footer .uppie img {
   letter-spacing: 1.2px;
   margin: 0;
   min-width: 107px;
+  color: #fff;
 }
 .credits .credit p {
   opacity: 0.5;
   font-size: 10px;
   margin-top: 5px;
   margin-bottom: 0;
+  color: #fff;
 }
 .credits img {
   width: 40px;
+}
+
+#magic-cursor {
+  pointer-events: none;
+  z-index: 99;
+}
+
+#ball {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 0.8px solid #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #33b8c5;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.contact-area {
+  width: 190px;
+  margin-top: -35px;
+  margin-left: -5px;
+  height: 80px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+#ball.bl {
+  transform: scale(1.1) translate(-9px, -9px);
+  opacity: 0.3;
+}
+
+@keyframes blur-text-enter {
+  from {
+    letter-spacing: 10px;
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    letter-spacing: 27px;
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+@keyframes blur-enter {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0px);
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
