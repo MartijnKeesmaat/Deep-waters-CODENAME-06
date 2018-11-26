@@ -28,22 +28,14 @@
             conceals billions <br />
             of creatures.
           </p>
-
           <div class="slide">
             <h1>Deep waters</h1>
-
-            <div class="slide-wrapper">
-              <div class="slide-item">
-                <img src="img/swim.jpg" class="slide-item__image" />
-              </div>
-            </div>
-
+            <img src="img/swim.jpg" alt="" />
             <div class="slides">
               <a href="#" class="active">01</a> <a href="#">02</a>
               <a href="#">03</a><a href="#">04</a>
             </div>
           </div>
-
           <div class="video"><img src="img/hand.jpg" alt="" /></div>
         </main>
 
@@ -59,31 +51,7 @@
             </div>
           </div>
         </footer>
-        <script src="js/pixi.min.js"></script>
-        <script src="js/TweenMax.min.js"></script>
-        <script src="js/displacement.js"></script>
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script>
-          imagesLoaded(document.body, () =>
-            document.body.classList.remove('loading')
-          );
-
-          var spriteImages = document.querySelectorAll('.slide-item__image');
-          var spriteImagesSrc = [];
-
-          for (var i = 0; i < spriteImages.length; i++) {
-            var img = spriteImages[i];
-            spriteImagesSrc.push(img.getAttribute('src'));
-          }
-
-          var initCanvasSlideshow = new CanvasSlideshow({
-            sprites: spriteImagesSrc,
-            displacementImage: 'img/displacements/clouds.jpg',
-            autoPlay: true,
-            autoPlaySpeed: [10, 3],
-            displaceScale: [200, 70]
-          });
-        </script>
+        <scripts src="scripts"></scripts>
       </div>
     </div>
   </body>

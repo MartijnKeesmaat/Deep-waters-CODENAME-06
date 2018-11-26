@@ -156,7 +156,11 @@ main .slide h1 {
   font-size: 53px;
 }
 main .slide img {
-  width: 280px;
+  display: none;
+}
+main .slide canvas {
+  width: 280px !important;
+  height: 413px !important;
 }
 main .slide .slides {
   margin-top: 35px;
